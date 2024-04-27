@@ -1,0 +1,48 @@
+@font-face
+  font-family: "Bitter-Medium"
+  src: url('../fonts/Bitter-Medium.woff'), url('../fonts/Bitter-Medium.woff2')
+  font-display: swap
+@font-face
+  font-family: "Bitter-SemiBold"
+  src: url('../fonts/Bitter-SemiBold.woff'), url('../fonts/Bitter-SemiBold.woff2')
+  font-display: swap
+@font-face
+  font-family: "Montserrat-Regular"
+  src: url('../fonts/Montserrat-Regular.woff'), url('../fonts/Montserrat-Regular.woff2')
+  font-display: swap
+@font-face
+  font-family: "Montserrat-Medium"
+  src: url('../fonts/Montserrat-Medium.woff'), url('../fonts/Montserrat-Medium.woff2')
+  font-display: swap
+@font-face
+  font-family: "Montserrat-SemiBold"
+  src: url('../fonts/Montserrat-SemiBold.woff'), url('../fonts/Montserrat-SemiBold.woff2')
+  font-display: swap
+
+@import 'common/variables'
+@import 'common/*'
+@import 'components/*'
+
+.page
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  overflow: hidden
+  position relative
+
+  &--thanks
+    color: $color-white-2
+    font-size: 13px
+    line-height: 130%
+    +above($breakpoints.xxl)
+      font-size: 16px
+    .header
+      background-color: $color-green-1
+
+  &__content
+    flex: 1
+    &--layout
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-direction: column

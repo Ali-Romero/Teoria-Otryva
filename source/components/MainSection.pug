@@ -1,0 +1,37 @@
+section.main-section
+  +header(true)
+  .wrapper
+    .main-section__inner
+      .main-section__content
+        .main-section__info
+          h1.main-section__title.font-s-36 Зарабатывайте от 315 000 ₽ 
+            br
+            |ежемесячно на продаже экзотических 
+            br
+            |фруктов и подарочных боксов
+
+          .main-section__helper.font-m-med.font-s-18 Начните получать стабильную прибыль 
+            br
+            |уже через 
+            span 1,5 
+            |месяца после подписания договора
+
+          .main-section__feedback
+            .feedback
+              form(data-feedback-form).feedback__form
+                .feedback__description.font-s-18 Получите подробную презентацию 
+                  br
+                  |франшизы «MAGIC FRUIT» в 1 клик
+                .feedback__list
+                  .feedback__item
+                    .input
+                      input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
+                  .feedback__item
+                    .input
+                      input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
+                  .feedback__item
+                    button.btn(type="submit")
+                      span Получить
+
+          .main-section__image
+            img(src="images/main-image.jpg" loading="lazy" alt="image" width="621" height="458").d-block

@@ -1,0 +1,16 @@
+mixin header(index)
+  header.header
+    .wrapper
+      .header__inner
+        .header__logo
+          if index
+            img(src="images/logo-main.svg" loading="lazy" alt="logo" width="174" height="51").d-block
+          else
+            img(src="images/logo-secondary.svg" loading="lazy" alt="logo" width="174" height="51").d-block
+
+        .header__logo-description.text-center Франшиза бизнеса по продаже 
+          br
+          |экзотических фруктов и подарочных боксов
+
+        .header__connection
+          +connection()

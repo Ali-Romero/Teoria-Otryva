@@ -1,0 +1,35 @@
+.header
+  position relative
+  z-index 22
+
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 18px 0
+    +above($breakpoints.md)
+      padding: 24px 0
+    +above($breakpoints.xxl)
+      padding: 40px 0
+
+  &__logo
+    img
+      height: auto
+      width 142px
+      +above($breakpoints.sm)
+        width 130px
+      +above($breakpoints.md)
+        width 150px
+      +above($breakpoints.xxl)
+        width 174px
+
+  &__logo-description
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      line-height: 120%
+      font-size: 13px
+    +above($breakpoints.md)
+      font-size: 16px
+    +above($breakpoints.xxl)
+      font-size: 18px
