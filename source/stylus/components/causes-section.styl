@@ -1,0 +1,117 @@
+.causes-section
+  &__inner
+    padding: 56px 0
+    text-align: center
+    position relative
+    z-index 1
+    +above($breakpoints.sm)
+      padding: 70px 0
+      text-align: left
+    +above($breakpoints.md)
+      padding: 90px 0
+    +above($breakpoints.xxl)
+      padding: 150px 0
+
+  &__decor
+    position: absolute
+    z-index -1
+    top: 194px
+    left: 0
+    right 0
+    +above($breakpoints.sm)
+      top: 207px
+      right auto
+    +above($breakpoints.xxl)
+      top: 276px
+    img
+      height: auto
+      width 260px
+      margin: 0 auto
+      +above($breakpoints.sm)
+        margin: 0
+        width 255px
+      +above($breakpoints.md)
+        width 396px
+      +above($breakpoints.xxl)
+        width 486px
+
+  &__content
+    display: flex
+    gap: 150px;
+    margin: 0 0 34px 0;
+    flex-direction: column
+    +above($breakpoints.sm)
+      gap: 20px;
+      margin: 0 0 26px 0;
+      flex-direction: row
+    +above($breakpoints.md)
+      gap: 30px;
+      margin: 0 0 26px 0;
+    +above($breakpoints.xxl)
+      gap: 48px
+      margin: 0 0 26px 0
+
+  &__title
+    width 270px
+    +above($breakpoints.md)
+      width unset
+    br
+      display: none
+      +above($breakpoints.md)
+        display: block
+
+  &__info
+    +above($breakpoints.sm)
+      width 405px
+    +above($breakpoints.md)
+      width 502px
+    +above($breakpoints.xxl)
+      width 562px
+
+  &__info-list
+    display: flex
+    flex-wrap: wrap
+    gap: 14px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__info-item
+    +above($breakpoints.sm)
+      width 195px
+    +above($breakpoints.md)
+      width 244px
+    +above($breakpoints.xxl)
+      width 271px
+    br
+      display: none
+      +above($breakpoints.xxl)
+        display: block
+
+  &__info-title
+    background: linear-gradient(180deg, #e92a84 0%, #e0f71e 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 0 3px 0
+    +above($breakpoints.md)
+      margin: 0 0 6px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 10px 0
+
+  &__feedback
+    .feedback
+      &__container
+        display: flex
+        margin: 0 0 16px 0
+        gap: 13px
+        flex-direction: column
+        +above($breakpoints.sm)
+          gap: 30px
+          flex-direction: row
+        +above($breakpoints.md)
+          gap: 150px
+        +above($breakpoints.xxl)
+          gap: 232px
+          margin: 0 0 20px 0
+      &__description
+        margin: 0
