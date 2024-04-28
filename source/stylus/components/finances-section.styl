@@ -1,0 +1,131 @@
+.finances-section
+  &__inner
+    padding: 56px 0
+    text-align: center
+    +above($breakpoints.sm)
+      padding: 80px 0
+      text-align: left
+    +above($breakpoints.md)
+      padding: 110px 0
+    +above($breakpoints.xxl)
+      padding: 150px 0
+
+  &__content
+    display: flex
+    align-items: center
+    gap: 26px
+    margin: 0 0 33px 0
+    flex-direction: column
+    +above($breakpoints.sm)
+      margin: 0 0 44px 0
+      flex-direction: row
+    +above($breakpoints.md)
+      gap: 94px
+      margin: 0 0 60px 0
+    +above($breakpoints.xxl)
+      gap: 117px
+      margin: 0 0 88px 0
+
+  &__image
+    img
+      height: auto
+      width 278px
+      margin: 0 auto
+      +above($breakpoints.sm)
+        margin: 0
+      +above($breakpoints.md)
+        width 376px
+      +above($breakpoints.xxl)
+        width 465px
+
+  &__title
+    margin: 0 0 14px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 20px 0
+
+  &__cards-container
+    +above($breakpoints.sm)
+      width 386px
+    +above($breakpoints.md)
+      width 448px
+    +above($breakpoints.xxl)
+      width 562px
+
+  &__cards-helper
+    margin: 0 0 14px 0
+    +above($breakpoints.md)
+      margin: 0 0 38px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 44px 0
+
+  &__cards
+    width 220px
+    margin: 0 auto
+    +above($breakpoints.sm)
+      margin: 0
+      width unset
+
+  &__cards-list
+    +above($breakpoints.sm)
+      display: flex
+      flex-wrap: wrap
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 16px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__cards-item
+    +above($breakpoints.sm)
+      width auto !important
+
+  &__card
+    text-align: center
+    background-image: radial-gradient(circle at 100% 100%, transparent 9px, #e92a84 9px, #e92a84 10px, transparent 10px), linear-gradient(to right, #e92a84, #e92a84), radial-gradient(circle at 0% 100%, transparent 9px, #e92a84 9px, #e92a84 10px, transparent 10px), linear-gradient(to bottom, #e92a84, #e0f71e), radial-gradient(circle at 0% 0%, transparent 9px, #e0f71e 9px, #e0f71e 10px, transparent 10px), linear-gradient(to left, #e0f71e, #e0f71e), radial-gradient(circle at 100% 0%, transparent 9px, #e0f71e 9px, #e0f71e 10px, transparent 10px), linear-gradient(to top, #e0f71e, #e92a84);
+    background-size: 10px 10px, calc(100% - 20px) 1px, 10px 10px, 1px calc(100% - 20px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+    width: 220px;
+    height: 107px;
+    padding: 17px 6px;
+    +above($breakpoints.sm)
+      width: 188px;
+      height: 102px;
+      padding: 17px 6px;
+    +above($breakpoints.md)
+      width: 216px;
+      height: 119px;
+      padding: 22px 6px;
+    +above($breakpoints.xxl)
+      width 270px
+      height: 150px
+      padding: 32px 10px
+    br
+      display: block
+      +above($breakpoints.sm)
+        display: none
+      +above($breakpoints.md)
+        display: block
+
+  &__card-title
+    margin: 0 0 3px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 5px 0
+
+  &__feedback
+    .feedback
+      &__container
+        display: flex
+        margin: 0 0 16px 0
+        gap: 13px
+        flex-direction: column
+        +above($breakpoints.sm)
+          gap: 48px
+          flex-direction: row
+        +above($breakpoints.md)
+          gap: 180px
+        +above($breakpoints.xxl)
+          gap: 260px
+          margin: 0 0 20px 0
+      &__description
+        margin: 0

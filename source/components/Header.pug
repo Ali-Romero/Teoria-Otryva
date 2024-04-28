@@ -1,16 +1,13 @@
-mixin header(index)
+mixin header()
   header.header
     .wrapper
       .header__inner
         .header__logo
-          if index
-            img(src="images/logo-main.svg" loading="lazy" alt="logo" width="174" height="51").d-block
-          else
-            img(src="images/logo-secondary.svg" loading="lazy" alt="logo" width="174" height="51").d-block
+          img(src="images/logo-main.svg" loading="lazy" alt="logo" width="172" height="75").d-block
 
-        .header__logo-description.text-center Франшиза бизнеса по продаже 
+        .header__logo-description.text-center Франшиза сети 
           br
-          |экзотических фруктов и подарочных боксов
+          |развлекательных пространств 
 
         .header__connection
           +connection()

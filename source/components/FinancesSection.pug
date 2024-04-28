@@ -1,0 +1,71 @@
+section.finances-section
+  .wrapper
+    .finances-section__inner
+      .finances-section__content
+        .finances-section__info
+          h2.finances-section__title.font-s-30 Основные показатели 
+            br
+            |франшизы
+          .finances-section__image
+            img(src="images/finances-image.jpg" loading="lazy" alt="image" width="465" height="470").d-block
+
+        .finances-section__cards-container
+          .finances-section__cards-helper Сотрудничая с нами, вы можете рассчитывать на:
+          .finances-section__cards.swiper-finances
+            .finances-section__cards-list.swiper-wrapper
+              .finances-section__cards-item.swiper-slide
+                .finances-section__card
+                  .finances-section__card-name.font-s-30.font-f-h.text-up.color-pink-1 от 1,1 млн ₽
+                  .finances-section__card-description чистая 
+                    br
+                    |ежегодная прибыль
+              .finances-section__cards-item.swiper-slide
+                .finances-section__card
+                  .finances-section__card-name.font-s-30.font-f-h.text-up.color-pink-1 от 13 месяцев
+                  .finances-section__card-description срок окупаемости вашего 
+                    br
+                    |бизнеса
+              .finances-section__cards-item.swiper-slide
+                .finances-section__card
+                  .finances-section__card-name.font-s-30.font-f-h.text-up.color-pink-1 333 000 ₽
+                  .finances-section__card-description средняя ежемесячная 
+                    br
+                    |выручка
+              .finances-section__cards-item.swiper-slide
+                .finances-section__card
+                  .finances-section__card-name.font-s-30.font-f-h.text-up.color-pink-1 26,6%
+                  .finances-section__card-description рентабельность по чистой 
+                    br
+                    |прибыли
+              .finances-section__cards-item.swiper-slide
+                .finances-section__card
+                  .finances-section__card-name.font-s-30.font-f-h.text-up.color-pink-1 26 дней
+                  .finances-section__card-description для того чтобы 
+                    br
+                    |запустить бизнес
+              .finances-section__cards-item.swiper-slide
+                .finances-section__card
+                  .finances-section__card-name.font-s-30.font-f-h.text-up.color-pink-1 менее 1 млн ₽
+                  .finances-section__card-description инвестиций на открытие 
+                    br
+                    |бизнеса
+            .finances-section__cards-progress.swiper-progress.finances-pagination
+
+      .finances-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__container
+              .feedback__title.font-s-20 Ознакомьтесь детально с финансовыми 
+                br
+                |расчетами вашего будущего бизнеса
+              .feedback__description Скачайте финансовую модель ТЕОРИЯ ОТРЫВА
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="name" autocomplete="off" placeholder="Имя:").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон:").input__field
+              .feedback__item
+                button.btn(type="submit")
+                  span Скачать

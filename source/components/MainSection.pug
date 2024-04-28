@@ -1,37 +1,61 @@
 section.main-section
-  +header(true)
+  .main-section__bg
+    .main-section__image
+      img(src="images/main-image.png" loading="lazy" alt="image" width="847" height="800").d-block
+
   .wrapper
     .main-section__inner
       .main-section__content
-        .main-section__info
-          h1.main-section__title.font-s-36 Зарабатывайте от 315 000 ₽ 
-            br
-            |ежемесячно на продаже экзотических 
-            br
-            |фруктов и подарочных боксов
+        h1.main-section__title.font-s-36.font-f-bold Откройте свое развлекательное 
+          br
+          |пространство с минимальными 
+          br
+          |инвестициями и прибылью 
+          br
+          |от 
+          span.color-pink-1 1,1 млн рублей 
+          |в год
 
-          .main-section__helper.font-m-med.font-s-18 Начните получать стабильную прибыль 
-            br
-            |уже через 
-            span 1,5 
-            |месяца после подписания договора
+        .main-section__helper.font-m-med Начните зарабатывать, 
+          br.d-block
+          |занимаясь любимым делом
 
-          .main-section__feedback
-            .feedback
-              form(data-feedback-form).feedback__form
-                .feedback__description.font-s-18 Получите подробную презентацию 
+        .main-section__feedback
+          .feedback
+            form(data-feedback-form).feedback__form
+              .feedback__description Получите подробный план открытия 
+              .feedback__list
+                .feedback__item
+                  .input
+                    input(type="text" name="name" autocomplete="off" placeholder="Имя:").input__field
+                .feedback__item
+                  .input
+                    input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон:").input__field
+                .feedback__item
+                  button.btn(type="submit")
+                    span Получить
+
+        .main-section__info.font-f-med.swiper-main
+          .main-section__info-list.swiper-wrapper
+            .main-section__info-item.swiper-slide
+              .main-section__info-container.main-section__info-container--1
+                .main-section__info-icon
+                  img(src="images/main-icon-1.svg" loading="lazy" alt="icon" width="36" height="36").d-block
+                .main-section__info-description Быстрый 
                   br
-                  |франшизы «MAGIC FRUIT» в 1 клик
-                .feedback__list
-                  .feedback__item
-                    .input
-                      input(type="text" name="name" autocomplete="off" placeholder="Имя").input__field
-                  .feedback__item
-                    .input
-                      input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон").input__field
-                  .feedback__item
-                    button.btn(type="submit")
-                      span Получить
-
-          .main-section__image
-            img(src="images/main-image.jpg" loading="lazy" alt="image" width="621" height="458").d-block
+                  |старт
+            .main-section__info-item.swiper-slide
+              .main-section__info-container.main-section__info-container--2
+                .main-section__info-icon
+                  img(src="images/main-icon-2.svg" loading="lazy" alt="icon" width="36" height="36").d-block
+                .main-section__info-description Поддержка 
+                  br
+                  |партнеров
+            .main-section__info-item.swiper-slide
+              .main-section__info-container.main-section__info-container--3
+                .main-section__info-icon
+                  img(src="images/main-icon-3.svg" loading="lazy" alt="icon" width="36" height="36").d-block
+                .main-section__info-description Минимальные 
+                  br
+                  |вложения
+        .main-section__info-bullets.main-pagination.swiper-bullets

@@ -9,25 +9,28 @@
     width: 100%
     height: 48px
     line-height: normal
-    font-size: 14px
+    font-size: 17px
     padding: 0
     display: block
     outline: none
-    border-radius: 10px
-    border: 1px solid $color-green-1
-    background: none
-    color: $color-green-1
-    font-family: "Montserrat-Regular"
+    border: none
+    background-image: radial-gradient(circle at 100% 100%, transparent 9px, #e92a84 9px, #e92a84 10px, transparent 10px), linear-gradient(to right, #e92a84, #e0f71e), radial-gradient(circle at 0% 100%, transparent 9px, #e0f71e 9px, #e0f71e 10px, transparent 10px), linear-gradient(to bottom, #e0f71e, #e0f71e), radial-gradient(circle at 0% 0%, transparent 9px, #e0f71e 9px, #e0f71e 10px, transparent 10px), linear-gradient(to left, #e0f71e, #e92a84), radial-gradient(circle at 100% 0%, transparent 9px, #e92a84 9px, #e92a84 10px, transparent 10px), linear-gradient(to top, #e92a84, #e92a84);
+    background-size: 10px 10px, calc(100% - 20px) 1px, 10px 10px, 1px calc(100% - 20px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+    background-color: unset
+    color: $color-white
+    font-family: "FuturaPT-Book"
     line-height: 120%
     font-weight: 400
     padding: 0 10px 0 24px
     transition: 0.3s
     +above($breakpoints.sm)
       height: 42px
-      font-size: 13px
+      font-size: 16px
       padding: 0 10px 0 16px
     +above($breakpoints.md)
-      font-size: 14px
+      font-size: 17px
       height: 50px
       padding: 0 10px 0 18px
     +above($breakpoints.xxl)
@@ -41,13 +44,13 @@
       -webkit-box-shadow: 0 0 0px 1000px white inset
       transition: all 5000s ease-in-out 0s
     &::placeholder
-      font-family: "Montserrat-Regular"
+      font-family: "FuturaPT-Book"
       font-weight: 400
-      color: $color-green-1
+      color: $color-white
     &::-ms-input-placeholder
-      font-family: "Montserrat-Regular"
+      font-family: "FuturaPT-Book"
       font-weight: 400
-      color: $color-green-1
+      color: $color-white
     &.error
       color: $color-error
       &::placeholder
