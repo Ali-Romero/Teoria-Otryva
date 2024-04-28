@@ -1,0 +1,111 @@
+.about-section
+  background-image: url('../images/about-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__inner
+    padding: 80px 0
+    text-align: center
+    position relative
+    z-index 1
+    +above($breakpoints.sm)
+      padding: 98px 0 100px 0
+      text-align: left
+    +above($breakpoints.md)
+      padding: 124px 0 138px 0
+    +above($breakpoints.xxl)
+      padding: 189px 0 194px 0
+
+  &__decor
+    position: absolute
+    z-index -1
+    img
+      height: auto
+      width 146px
+      +above($breakpoints.sm)
+        width 170px
+      +above($breakpoints.md)
+        width 190px
+      +above($breakpoints.xxl)
+        width 268px
+    &--1
+      top: 10px;
+      left: 8px;
+      +above($breakpoints.sm)
+        top: 13px
+        left: 84px
+      +above($breakpoints.md)
+        top: 25px
+      +above($breakpoints.xxl)
+        top: 40px
+    &--2
+      top: 29px;
+      right: 19px;
+      +above($breakpoints.sm)
+        top: 36px
+        right 166px
+      +above($breakpoints.md)
+        top: 52px
+    &--3
+      left: 3px;
+      bottom: 36px;
+      +above($breakpoints.sm)
+        left: 117px
+        bottom: 71px
+      +above($breakpoints.xxl)
+        bottom: 91px
+    &--4
+      right: -30px;
+      bottom: 14px;
+      +above($breakpoints.sm)
+        right: 29px;
+        bottom: 17px;
+      +above($breakpoints.md)
+        right 100px
+        bottom: 30px
+      +above($breakpoints.xxl)
+        bottom: 45px
+
+  &__content
+    display: flex
+    gap: 16px
+    flex-direction: column
+    +above($breakpoints.sm)
+      gap: 24px
+      flex-direction: row
+    +above($breakpoints.md)
+      gap: 73px
+    +above($breakpoints.xxl)
+      gap: 117px
+
+  &__title
+    margin: 0 0 15px 0
+
+  &__image
+    img
+      height: auto
+      width 100%
+      +above($breakpoints.sm)
+        width 334px
+      +above($breakpoints.md)
+        width 385px
+      +above($breakpoints.xxl)
+        width 464px
+
+  &__info
+    +above($breakpoints.sm)
+      width 466px
+    +above($breakpoints.xxl)
+      width 466px
+    li
+      margin: 0 0 13px 0
+      +above($breakpoints.md)
+        margin: 0 0 24px 0
+      &:last-child
+        margin: 0
+
+    br
+      display: none
+      +above($breakpoints.xxl)
+        display: block
