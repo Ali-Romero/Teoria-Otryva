@@ -1,0 +1,124 @@
+.support-section
+  &__inner
+    padding: 0 0 56px 0
+    +above($breakpoints.sm)
+      padding: 0 0 70px 0
+    +above($breakpoints.md)
+      padding: 0 0 90px 0
+    +above($breakpoints.xxl)
+      padding: 0 0 150px 0
+
+  &__content
+    display: flex
+    gap: 32px
+    flex-direction: column
+    +above($breakpoints.sm)
+      gap: 26px
+      flex-direction: row
+    +above($breakpoints.md)
+      gap: 68px
+    +above($breakpoints.xxl)
+      gap: 117px
+
+  &__title
+    margin: 0 0 20px 0
+
+  &__image
+    margin: 0 0 14px 0
+    +above($breakpoints.sm)
+      margin: 0 0 40px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 50px 0
+    img
+      height: auto
+      width 100%
+      +above($breakpoints.sm)
+        width 318px
+      +above($breakpoints.md)
+        width 394px
+      +above($breakpoints.xxl)
+        width 465px
+
+  &__info
+    +above($breakpoints.sm)
+      width 343px
+    +above($breakpoints.md)
+      width 368px
+
+  &__info-title
+    margin: 0 0 14px 0
+    +above($breakpoints.xxl)
+      margin: 0 0 20px 0
+
+  &__info-list
+    margin: 0 0 26px 0
+    position relative
+    z-index 2
+    +above($breakpoints.xxl)
+      margin: 0 0 39px 0
+    &:before,
+    &:after
+      content: ""
+      position: absolute
+      z-index 1
+      width 2px
+      left: 5px
+      background: $color-pink-1
+      height: 117px
+      +above($breakpoints.sm)
+        height: 100px
+      +above($breakpoints.md)
+        height: 118px
+      +above($breakpoints.xxl)
+        height: 136px
+    &:before
+      top: 19px
+    &:after
+      bottom: 19px
+
+  &__info-item
+    margin: 0 0 14px 0
+    position relative
+    z-index 2
+    display: flex
+    align-items: center
+    gap: 5px
+    +above($breakpoints.xxl)
+      margin: 0 0 20px 0
+    &:last-child
+      margin: 0
+    &:nth-child(3)
+      position relative
+      z-index 1
+      &:before
+        content: ""
+        position: absolute
+        z-index -2
+        height: 64px
+        width 2px
+        left: 5px
+        top: 17px
+        background: linear-gradient(235deg, #e92a84 0%, #e0f71e 100%);
+        +above($breakpoints.sm)
+          height: 50px
+        +above($breakpoints.md)
+          height: 65px
+        +above($breakpoints.xxl)
+          height: 86px
+
+  &__info-icon
+    width 11px
+    height: 11px
+    border-radius: 100%
+    background: $color-pink-1
+    position relative
+    z-index 3
+    &--last
+      background: linear-gradient(180deg, #e92a84 0%, #e0f71e 100%);
+
+  &__info-description
+    width 294px
+    +above($breakpoints.sm)
+      width 325px
+    +above($breakpoints.md)
+      width 330px
