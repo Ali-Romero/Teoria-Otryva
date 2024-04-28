@@ -1,0 +1,56 @@
+section.FAQ-section
+  .wrapper
+    .FAQ-section__inner.font-s-20
+      .FAQ-section__head
+        h2.FAQ-section__title.font-s-30 Почувствуйте себя владельцем 
+          br
+          |развлекательного пространства
+        .FAQ-section__title-helper Запишитесь на тест-драйв 
+          br
+          |франшизы, и вы узнаете:
+
+      .FAQ-section__info
+        .FAQ-section__info-list
+          .FAQ-section__info-item
+            .FAQ-section__info-container
+              .FAQ-section__info-icon
+                img(src="images/checked.svg" loading="lazy" alt="image" width="24" height="24").d-block
+              .FAQ-section__info-description Как вести документооборот
+          .FAQ-section__info-item
+            .FAQ-section__info-container
+              .FAQ-section__info-icon
+                img(src="images/checked.svg" loading="lazy" alt="image" width="24" height="24").d-block
+              .FAQ-section__info-description Как расширять клиентскую базу
+          .FAQ-section__info-item
+            .FAQ-section__info-container
+              .FAQ-section__info-icon
+                img(src="images/checked.svg" loading="lazy" alt="image" width="24" height="24").d-block
+              .FAQ-section__info-description Как избежать ошибок на старте
+          .FAQ-section__info-item
+            .FAQ-section__info-container
+              .FAQ-section__info-icon
+                img(src="images/checked.svg" loading="lazy" alt="image" width="24" height="24").d-block
+              .FAQ-section__info-description Как не стать жертвой 
+                br
+                |недобросовестных заказчиков
+          .FAQ-section__info-item
+            .FAQ-section__info-container
+              .FAQ-section__info-icon
+                img(src="images/checked.svg" loading="lazy" alt="image" width="24" height="24").d-block
+              .FAQ-section__info-description Как и из чего будет 
+                br
+                |формироваться ваша прибыль
+
+      .FAQ-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="name" autocomplete="off" placeholder="Имя:").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон:").input__field
+              .feedback__item
+                button.btn(type="submit")
+                  span Записаться
