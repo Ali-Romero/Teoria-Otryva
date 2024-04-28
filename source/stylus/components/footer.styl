@@ -4,11 +4,13 @@
   background-color: $color-green-1
   color: $color-white-2
   line-height: 120%
-  font-size: 12px
+  font-size: 16px
+  +above($breakpoints.sm)
+    font-size: 13px
   +above($breakpoints.md)
-    font-size: 14px
-  +above($breakpoints.xxl)
     font-size: 16px
+  +above($breakpoints.xxl)
+    font-size: 18px
 
   &__row
     margin: 0 0 0 auto
@@ -34,25 +36,6 @@
         display: flex
         align-items: center
 
-  &__container
-    display: flex
-    align-items: center
-    gap: 8px
-    flex-direction: column
-    +above($breakpoints.sm)
-      gap: 4px
-      align-items: flex-start
-    +above($breakpoints.md)
-      align-items: flex-end
-      flex-direction: row
-      gap: 18px
-    +above($breakpoints.xxl)
-      gap: 64px
-  &__description
-    +above($breakpoints.sm)
-      display: none
-    +above($breakpoints.md)
-      display: block
   &__privacy
     display block
     margin: 12px 0 0 0
@@ -69,13 +52,15 @@
   &__logo
     img
       height: auto
-      width 190px
+      width 142px
+      margin: 0 auto
       +above($breakpoints.sm)
-        width 140px
+        margin: 0
+        width 100px
       +above($breakpoints.md)
         width 140px
       +above($breakpoints.xxl)
-        width 174px
+        width 172px
 
   &__connection
     display: flex

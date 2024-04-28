@@ -1,0 +1,75 @@
+.city-section
+  position relative
+  z-index 12
+  color: $color-white
+  background-image: url('../images/city-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  &__bg
+    z-index -1
+    position: absolute
+    top: 0
+    left: 0
+    right 0
+    bottom: 0
+    pointer-events: none
+    &:before
+      content: ""
+      position: absolute
+      z-index -1
+      top: 0
+      left: 0
+      right 0
+      bottom: 0
+      background-color: rgba(233, 42, 132, 0.2);
+      +above($breakpoints.sm)
+        background-color: rgba(233, 42, 132, 0.2);
+      +above($breakpoints.md)
+        background-color: rgba(233, 42, 132, 0.16);
+
+  &__image
+    position: absolute
+    pointer-events: none
+    bottom: 0
+    z-index -2
+    right calc(50% - 190px)
+    +above($breakpoints.sm)
+      right calc(50% - 457px)
+    +above($breakpoints.md)
+      right calc(50% - 602px)
+    +above($breakpoints.xxl)
+      right calc(50% - 766px)
+    img
+      height: auto
+      width 333px
+      +above($breakpoints.sm)
+        width 477px
+      +above($breakpoints.md)
+        width 662px
+      +above($breakpoints.xxl)
+        width 858px
+
+  &__inner
+    padding: 55px 0 330px
+    text-align: center
+    +above($breakpoints.sm)
+      padding: 90px 0
+      text-align: left
+    +above($breakpoints.md)
+      padding: 150px 0
+    +above($breakpoints.xxl)
+      padding: 228px 0
+
+  &__title
+    margin: 0 0 20px 0
+    span
+      background: linear-gradient(270deg, #e92a84 0%, #e0f71e 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  &__feedback
+    .feedback
+      &__list
+        flex-direction: column

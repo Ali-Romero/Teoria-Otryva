@@ -9,13 +9,8 @@ function initAnchorBtn() {
   })
 }
 
-function setCurrentYear() {
-  $('[data-current-year]').text(new Date().getFullYear())
-}
-
 $(document).ready(function () {
   initAnchorBtn()
-  setCurrentYear()
 
   $('input').inputmask()
 })

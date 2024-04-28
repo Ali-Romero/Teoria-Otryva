@@ -1,0 +1,30 @@
+section.city-section
+  .city-section__bg
+    .city-section__image
+      img(src="images/city-image.png" loading="lazy" alt="image" width="858" height="799").d-block
+
+  .wrapper
+    .city-section__inner
+      h2.city-section__title.font-s-36.font-f-bold Откройте свое 
+        br
+        |развлекательное 
+        br
+        |пространство 
+        span ТЕОРИЯ ОТРЫВА
+
+      .city-section__feedback
+        .feedback
+          form(data-feedback-form).feedback__form
+            .feedback__description.font-s-18 Проверьте, свободен ли ваш город 
+              br.d-block
+              |для работы по франшизе
+            .feedback__list
+              .feedback__item
+                .input
+                  input(type="text" name="name" autocomplete="off" placeholder="Имя:").input__field
+              .feedback__item
+                .input
+                  input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон:").input__field
+              .feedback__item
+                button.btn(type="submit")
+                  span Проверить

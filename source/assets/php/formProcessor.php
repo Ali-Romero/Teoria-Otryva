@@ -48,7 +48,7 @@ foreach ($_REQUEST as $reqFieldName => $value) {
 }
 
 // Create mail data
-$headers = 'From: «MAGIC FRUIT» <info@mysite.ru>' . "\r\n";
+$headers = 'From: ТЕОРИЯ ОТРЫВА <info@mysite.ru>' . "\r\n";
 $headers .= 'Reply-To: info@mysite.ru' . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html;charset=utf-8;\r\n";
@@ -57,13 +57,13 @@ $headers .= 'X-Mailer: PHP' . phpversion() . "\r\n";
 
 $sendto = 'test@yandex.ru';
 
-$subject = 'Заявка с лендинга «MAGIC FRUIT»';
+$subject = 'Заявка с лендинга ТЕОРИЯ ОТРЫВА';
 
 $phone = '';
 $nameOrCity = '';
 $htmlBody = "<html><body style='font-family:Arial,sans-serif;'5>";
 $htmlBody .=
-    "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Заявка с лендинга «MAGIC FRUIT»</h2>\r\n";
+    "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Заявка с лендинга ТЕОРИЯ ОТРЫВА</h2>\r\n";
 foreach ($fields as $key => $val) {
     if (!$val[2] || empty($val[2])) {
         continue;
@@ -82,7 +82,7 @@ if (mail($sendto, $subject, $htmlBody, $headers)) {
         !empty($fields['email'][2])
     ) {
         // Можно назначить произвольный заголовок для письма клиенту
-        $customerSubject = 'Вы подали заявку на лендинге «MAGIC FRUIT»';
+        $customerSubject = 'Вы подали заявку на лендинге ТЕОРИЯ ОТРЫВА';
         $customerGreatings = !empty($fields['name'][2])
             ? 'Добрый день, ' . $fields['name'][2] . '.'
             : 'Добрый день!';
