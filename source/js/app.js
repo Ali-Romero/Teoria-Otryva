@@ -9,8 +9,16 @@ function initAnchorBtn() {
   })
 }
 
+function filterInvalidCharacters() {
+  $('input[name="name"]').on('input', function() {
+    let value = $(this).val();
+    $(this).val(value.replace(/[^a-zA-Zа-яА-ЯёЁ ]/g, ''));
+  });
+}
+
 $(document).ready(function () {
   initAnchorBtn()
+  filterInvalidCharacters()
 
   $('input').inputmask()
 })

@@ -4,6 +4,8 @@ function setInitialFeedbackStore() {
     email: '',
     name: '',
     city: '',
+    question: '',
+    answer: '',
     timezone: (-1 * new Date().getTimezoneOffset()) / 60,
     utm_medium: $.query.get('utm_medium') || '',
     utm_placement: $.query.get('utm_placement') || '',
@@ -12,20 +14,15 @@ function setInitialFeedbackStore() {
     utm_content: $.query.get('utm_content') || '',
     utm_campaign: $.query.get('utm_campaign') || '',
     utm_campaign_name: $.query.get('utm_campaign_name') || '',
-    utm_device: $.query.get('utm_device') || '',
+    device_type: $.query.get('device_type') || '',
     utm_region_name: $.query.get('utm_region_name') || '',
+    utm_description: $.query.get('utm_description') || '',
+    utm_device: $.query.get('utm_device') || '',
+    page_url: window.location.href,
+    user_location_ip: '',
     yclid: $.query.get('yclid') || '',
   }
 
-  ymaps.ready(function () {
-    ymaps.geolocation
-      .get({ provider: 'yandex', autoReverseGeocode: true })
-      .then(function (result) {
-        $.feedback_store.city =
-          result.geoObjects.get(0).properties.get('metaDataProperty')
-            .GeocoderMetaData.Address.formatted || ''
-      })
-  })
 }
 
 function createFormData(data) {
@@ -46,12 +43,20 @@ function initFeedbackForm() {
   $forms.on('submit', function (event) {
     event.preventDefault()
 
+    // Проверка на заполнение honeypot-поля
+    if ($(this).find('.honeypot').val() !== '') {
+      return
+    }
+
     if ($(this).valid()) {
       var fields = $(this)
         .serializeArray()
         .reduce(function (acc, current) {
           return $.extend(acc, { [current.name]: current.value })
         }, {})
+
+      localStorage.removeItem('lead_name')
+      localStorage.removeItem('city')
 
       if (fields.name) {
         localStorage.setItem('lead_name', fields.name)
